@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Medical and Personal History Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.css" rel="stylesheet" type="text/css" />
+
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.common.min.css" rel="stylesheet" />
+    <link href="http://cdn.kendostatic.com/2014.1.318/styles/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="http://protostrap.com/Assets/gv/css/gv.bootstrap-form.css" rel="stylesheet" type="text/css" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Fav and touch icons -->
+    
+</head>
+
+<body>
+    <style>
+        @media print {
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  float: left;
+}
+.col-sm-12 {
+  width: 100%;
+}
+.col-sm-11 {
+  width: 91.66666666666666%;
+}
+.col-sm-10 {
+  width: 83.33333333333334%;
+}
+.col-sm-9 {
+  width: 75%;
+}
+.col-sm-8 {
+  width: 66.66666666666666%;
+}
+.col-sm-7 {
+  width: 58.333333333333336%;
+}
+.col-sm-6 {
+  width: 50%;
+}
+.col-sm-5 {
+  width: 41.66666666666667%;
+}
+.col-sm-4 {
+  width: 33.33333333333333%;
+ }
+ .col-sm-3 {
+   width: 25%;
+ }
+ .col-sm-2 {
+   width: 16.666666666666664%;
+ }
+ .col-sm-1 {
+  width: 8.333333333333332%;
+ }
+
+  }
+        
+    </style>
+	
+    <div class="container-fluid">
+	
+	    <div class="row">
+
+            <form action="../submit" id="formentry" class="form-horizontal" role="form" data-parsley-validate novalidate>
+                <div class="container-fluid shadow">
+                    <div class="row">
+                        <div id="valErr" class="row viewerror clearfix hidden">
+                            <div class="alert alert-danger">Oops! Seems there are some errors..</div>
+                        </div>
+                        <div id="valOk" class="row viewerror clearfix hidden">
+                            <div class="alert alert-success">Yay! ..</div>
+                        </div>
+
+                        <div id="panel7" class="panel panel-default" data-role="panel">
+								<div class="panel-heading">Personal History</div>
+									<div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12"><div class="row"><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="Name">Name</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="Name" type="text" class="form-control k-textbox" data-role="text" placeholder="Enter Name" data-parsley-errors-container="#errId1"><span id="errId1" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="ReferredByDr.">Referred by Dr.</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="ReferredByDr." type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId2"><span id="errId2" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label" for="PrimaryCarePhysician(ifDifferentFromReferralDoctor):">Primary Care Physician (if different from referral doctor): </label>
+			    <div class="controls">
+                    
+                <input id="PrimaryCarePhysician(ifDifferentFromReferralDoctor):" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId3"><span id="errId3" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field2">Date of Birth:</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control k-input" style="width: 100%;"><span class="k-picker-wrap k-state-default"><input id="field2" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field2_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield2" style="width: 100%;" data-parsley-errors-container="#errId4"><span unselectable="on" class="k-select" role="button" aria-controls="field2_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId4" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="WhyWereYouSentToSeeAKidneyDoctor?">Why were you sent to see a kidney doctor ?</label>
+			    <div class="controls col-sm-9">
+                    
+                <textarea id="WhyWereYouSentToSeeAKidneyDoctor?" rows="4" class="form-control k-textbox" data-role="textarea" data-parsley-errors-container="#errId5"></textarea><span id="errId5" class="error"></span></div>
+                
+		</div></div></div></div>
+                                    </div></div></div>
+                                <div id="panel7" class="panel panel-default" data-role="panel">
+        <div class="panel-heading">Medical History</div>
+        <div class="panel-body">
+            
+        <div class="row"><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Kidney disease</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox25"><input type="checkbox" value="Transplant" id="checkbox25" name="field24" data-parsley-errors-container="#errId6">Transplant</label><label class="checkbox col-md-6" for="checkbox26"><input type="checkbox" value="Dialysis" id="checkbox26" name="field24" data-parsley-errors-container="#errId6">Dialysis</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox27"><input type="checkbox" value="Polycystic kidney disease" id="checkbox27" name="field24" data-parsley-errors-container="#errId6">Polycystic kidney disease</label><label class="checkbox col-md-6"><input id="checkbox38" name="field24" type="checkbox" value="Acute kidney injury" data-parsley-errors-container="#errId6">Acute kidney injury</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox40" name="field24" type="checkbox" value="Glomerulonephritis" data-parsley-errors-container="#errId6">Glomerulonephritis</label><span id="errId6" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="KidneyDiseaseCKDStage">Kidney disease CKD Stage</label>
+			    <div class="controls col-sm-9">
+                    
+                <select id="KidneyDiseaseCKDStage" class="form-control" data-role="select" selected="selected" data-parsley-errors-container="#errId7">
+		  
+		  
+		  
+		  
+		  
+		<option value=""></option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select><span id="errId7" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Ischemic Heart disease</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox62"><input type="checkbox" value="Heart attack" id="checkbox62" name="field61" data-parsley-errors-container="#errId8">Heart attack</label><label class="checkbox col-md-6" for="checkbox63"><input type="checkbox" value="Angina" id="checkbox63" name="field61" data-parsley-errors-container="#errId8">Angina</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox64"><input type="checkbox" value="Angioplasty" id="checkbox64" name="field61" data-parsley-errors-container="#errId8">Angioplasty</label><label class="checkbox col-md-6"><input id="checkbox69" name="field61" type="checkbox" value="Coronary stent" data-parsley-errors-container="#errId8">Coronary stent</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox71" name="field61" type="checkbox" value="CABG" data-parsley-errors-container="#errId8">CABG</label><span id="errId8" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">EENT</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox101"><input type="checkbox" value="Blindness" id="checkbox101" name="field100" data-parsley-errors-container="#errId9">Blindness</label><label class="checkbox col-md-6" for="checkbox102"><input type="checkbox" value="Cataracts" id="checkbox102" name="field100" data-parsley-errors-container="#errId9">Cataracts</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox108" name="field100" type="checkbox" value="Hearing problems" data-parsley-errors-container="#errId9">Hearing problems</label><label class="checkbox col-md-6"><input id="checkbox110" name="field100" type="checkbox" value="Glaucoma" data-parsley-errors-container="#errId9">Glaucoma</label><span id="errId9" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Cardiovascular</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox113"><input type="checkbox" value="Atrial fibrillation " id="checkbox113" name="field112" data-parsley-errors-container="#errId10">Atrial fibrillation </label><label class="checkbox col-md-6" for="checkbox114"><input type="checkbox" value="Pacemaker" id="checkbox114" name="field112" data-parsley-errors-container="#errId10">Pacemaker</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox115"><input type="checkbox" value="High Cholesterol" id="checkbox115" name="field112" data-parsley-errors-container="#errId10">High Cholesterol</label><label class="checkbox col-md-6"><input id="checkbox120" name="field112" type="checkbox" value="AICD" data-parsley-errors-container="#errId10">AICD</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox122" name="field112" type="checkbox" value="Valvular Heart disease" data-parsley-errors-container="#errId10">Valvular Heart disease</label><label class="checkbox col-md-6"><input id="checkbox124" name="field112" type="checkbox" value="Congestive heart failure" data-parsley-errors-container="#errId10">Congestive heart failure</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox126" name="field112" type="checkbox" value="Mitral valve prolapse" data-parsley-errors-container="#errId10">Mitral valve prolapse</label><span id="errId10" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Gastrointestinal</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox145"><input type="checkbox" value="GERD" id="checkbox145" name="field144" data-parsley-errors-container="#errId11">GERD</label><label class="checkbox col-md-6" for="checkbox146"><input type="checkbox" value="Stomach/Bowel ulcers" id="checkbox146" name="field144" data-parsley-errors-container="#errId11">Stomach/Bowel ulcers</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox147"><input type="checkbox" value="Gall bladder disease" id="checkbox147" name="field144" data-parsley-errors-container="#errId11">Gall bladder disease</label><label class="checkbox col-md-6"><input id="checkbox152" name="field144" type="checkbox" value="Hepatitis" data-parsley-errors-container="#errId11">Hepatitis</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox154" name="field144" type="checkbox" value="Inflammatory bowel disease" data-parsley-errors-container="#errId11">Inflammatory bowel disease</label><label class="checkbox col-md-6"><input id="checkbox156" name="field144" type="checkbox" value="Irritable bowel syndrome" data-parsley-errors-container="#errId11">Irritable bowel syndrome</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox158" name="field144" type="checkbox" value="Gluten intolerance" data-parsley-errors-container="#errId11">Gluten intolerance</label><label class="checkbox col-md-6"><input id="checkbox160" name="field144" type="checkbox" value="Lactose intolerance" data-parsley-errors-container="#errId11">Lactose intolerance</label><span id="errId11" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Neurological</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox189"><input type="checkbox" value="Multiple sclerosis " id="checkbox189" name="field188" data-parsley-errors-container="#errId12">Multiple sclerosis </label><label class="checkbox col-md-6" for="checkbox190"><input type="checkbox" value="Seizures" id="checkbox190" name="field188" data-parsley-errors-container="#errId12">Seizures</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox191"><input type="checkbox" value="Parkinson’s " id="checkbox191" name="field188" data-parsley-errors-container="#errId12">Parkinson’s </label><label class="checkbox col-md-6"><input id="checkbox196" name="field188" type="checkbox" value="Dementia" data-parsley-errors-container="#errId12">Dementia</label><span id="errId12" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Endocrine</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox207"><input type="checkbox" value="Hypothyroidism" id="checkbox207" name="field206" data-parsley-errors-container="#errId13">Hypothyroidism</label><label class="checkbox col-md-6" for="checkbox208"><input type="checkbox" value="Hyperparathyroidism Primary" id="checkbox208" name="field206" data-parsley-errors-container="#errId13">Hyperparathyroidism Primary</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox209"><input type="checkbox" value="Hyperparathyroidism Secondary" id="checkbox209" name="field206" data-parsley-errors-container="#errId13">Hyperparathyroidism Secondary</label><label class="checkbox col-md-6"><input id="checkbox214" name="field206" type="checkbox" value="Hyperthyroidism" data-parsley-errors-container="#errId13">Hyperthyroidism</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox216" name="field206" type="checkbox" value="Adrenal insufficiency" data-parsley-errors-container="#errId13">Adrenal insufficiency</label><span id="errId13" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Immuno/Allergy</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox231"><input type="checkbox" value="HIV" id="checkbox231" name="field230" data-parsley-errors-container="#errId14">HIV</label><label class="checkbox col-md-6" for="checkbox232"><input type="checkbox" value="AIDS" id="checkbox232" name="field230" data-parsley-errors-container="#errId14">AIDS</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox233"><input type="checkbox" value="Rheumatoid arthritis" id="checkbox233" name="field230" data-parsley-errors-container="#errId14">Rheumatoid arthritis</label><label class="checkbox col-md-6"><input id="checkbox238" name="field230" type="checkbox" value="Lupus" data-parsley-errors-container="#errId14">Lupus</label><span id="errId14" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Diabetes</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox43"><input type="checkbox" value="Type 1" id="checkbox43" name="field42" data-parsley-errors-container="#errId15">Type 1</label><label class="checkbox" for="checkbox44"><input type="checkbox" value="Type 2" id="checkbox44" name="field42" data-parsley-errors-container="#errId15">Type 2</label><span id="errId15" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">High blood pressure </label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox54"><input type="checkbox" value="Essential" id="checkbox54" name="field53" data-parsley-errors-container="#errId16">Essential</label><label class="checkbox" for="checkbox55"><input type="checkbox" value="Renovascular" id="checkbox55" name="field53" data-parsley-errors-container="#errId16">Renovascular</label><span id="errId16" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Cancer</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox74"><input type="checkbox" value="Lung" id="checkbox74" name="field73" data-parsley-errors-container="#errId17">Lung</label><label class="checkbox col-md-6" for="checkbox75"><input type="checkbox" value="Breast" id="checkbox75" name="field73" data-parsley-errors-container="#errId17">Breast</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox76"><input type="checkbox" value="Colon" id="checkbox76" name="field73" data-parsley-errors-container="#errId17">Colon</label><label class="checkbox col-md-6"><input id="checkbox84" name="field73" type="checkbox" value="Melanoma" data-parsley-errors-container="#errId17">Melanoma</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox86" name="field73" type="checkbox" value="Bladder" data-parsley-errors-container="#errId17">Bladder</label><label class="checkbox col-md-6"><input id="checkbox88" name="field73" type="checkbox" value="Lymphoma" data-parsley-errors-container="#errId17">Lymphoma</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox90" name="field73" type="checkbox" value="Kidney" data-parsley-errors-container="#errId17">Kidney</label><label class="checkbox col-md-6"><input id="checkbox92" name="field73" type="checkbox" value="Thyroid" data-parsley-errors-container="#errId17">Thyroid</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox94" name="field73" type="checkbox" value="Leukemia" data-parsley-errors-container="#errId17">Leukemia</label><label class="checkbox col-md-6"><input id="checkbox96" name="field73" type="checkbox" value="Endometrial" data-parsley-errors-container="#errId17">Endometrial</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox98" name="field73" type="checkbox" value="Pancreatic" data-parsley-errors-container="#errId17">Pancreatic</label><span id="errId17" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Respiratory</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox129"><input type="checkbox" value="COPD" id="checkbox129" name="field128" data-parsley-errors-container="#errId18">COPD</label><label class="checkbox col-md-6" for="checkbox130"><input type="checkbox" value="Chronic bronchitis" id="checkbox130" name="field128" data-parsley-errors-container="#errId18">Chronic bronchitis</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox136" name="field128" type="checkbox" value="Asthma" data-parsley-errors-container="#errId18">Asthma</label><label class="checkbox col-md-6" for="checkbox131"><input type="checkbox" value="Emphysema" id="checkbox131" name="field128" data-parsley-errors-container="#errId18">Emphysema</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox138" name="field128" type="checkbox" value="Pneumonia" data-parsley-errors-container="#errId18">Pneumonia</label><label class="checkbox col-md-6"><input id="checkbox140" name="field128" type="checkbox" value="Tuberculosis " data-parsley-errors-container="#errId18">Tuberculosis </label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox142" name="field128" type="checkbox" value="Sleep apnea" data-parsley-errors-container="#errId18">Sleep apnea</label><span id="errId18" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Genitourinary</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox163"><input type="checkbox" value="Kidney stones" id="checkbox163" name="field162" data-parsley-errors-container="#errId19">Kidney stones</label><label class="checkbox" for="checkbox164"><input type="checkbox" value="Frequent UTIs" id="checkbox164" name="field162" data-parsley-errors-container="#errId19">Frequent UTIs</label><span id="errId19" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">OB History</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox171"><input type="checkbox" value="Preeclampsia" id="checkbox171" name="field170" data-parsley-errors-container="#errId20">Preeclampsia</label><label class="checkbox col-md-6" for="checkbox172"><input type="checkbox" value="Pregnancy induced htn" id="checkbox172" name="field170" data-parsley-errors-container="#errId20">Pregnancy induced htn</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox173"><input type="checkbox" value="Gestational diabetes" id="checkbox173" name="field170" data-parsley-errors-container="#errId20">Gestational diabetes</label><label class="checkbox col-md-6"><input id="checkbox178" name="field170" type="checkbox" value="History of complicated pregnancy" data-parsley-errors-container="#errId20">History of complicated pregnancy</label><span id="errId20" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Musculoskeletal</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox181"><input type="checkbox" value="Osteoarthritis" id="checkbox181" name="field180" data-parsley-errors-container="#errId21">Osteoarthritis</label><label class="checkbox" for="checkbox182"><input type="checkbox" value="Osteoporosis" id="checkbox182" name="field180" data-parsley-errors-container="#errId21">Osteoporosis</label><span id="errId21" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Psychiatric</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox199"><input type="checkbox" value="Depression" id="checkbox199" name="field198" data-parsley-errors-container="#errId22">Depression</label><label class="checkbox" for="checkbox200"><input type="checkbox" value="Anxiety disorder" id="checkbox200" name="field198" data-parsley-errors-container="#errId22">Anxiety disorder</label><span id="errId22" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Hematology</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox219"><input type="checkbox" value="Anemia" id="checkbox219" name="field218" data-parsley-errors-container="#errId23">Anemia</label><label class="checkbox col-md-6" for="checkbox220"><input type="checkbox" value="Sickle cell disease" id="checkbox220" name="field218" data-parsley-errors-container="#errId23">Sickle cell disease</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox221"><input type="checkbox" value="Sickle cell trait" id="checkbox221" name="field218" data-parsley-errors-container="#errId23">Sickle cell trait</label><label class="checkbox col-md-6"><input id="checkbox226" name="field218" type="checkbox" value="Blood transfusion" data-parsley-errors-container="#errId23">Blood transfusion</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox228" name="field218" type="checkbox" value="Thalassemia" data-parsley-errors-container="#errId23">Thalassemia</label><span id="errId23" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3">Misc.</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox242"><input type="checkbox" value="Stroke" id="checkbox242" name="field241" data-parsley-errors-container="#errId24">Stroke</label><label class="checkbox" for="checkbox243"><input type="checkbox" value="Gout" id="checkbox243" name="field241" data-parsley-errors-container="#errId24">Gout</label><span id="errId24" class="error"></span></div>
+                
+		</div></div></div></div>
+    <div class="panel-toolbar"></div></div><div id="panel248" class="panel panel-default" data-role="panel">
+        <div class="panel-heading">Surgical History</div>
+        <div class="panel-body">
+            
+        <div class="row"><div class="col-md-12"><div class="row" style="display: block;"><div class="col-md-4"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3">Surgery</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox" for="checkbox251"><input type="checkbox" value="Appendectomy" id="checkbox251" name="field250" data-parsley-errors-container="#errId25">Appendectomy</label><label class="checkbox" for="checkbox252"><input type="checkbox" value="CABG" id="checkbox252" name="field250" data-parsley-errors-container="#errId25">CABG</label><label class="checkbox" for="checkbox253"><input type="checkbox" value="Carotid endarterectomy" id="checkbox253" name="field250" data-parsley-errors-container="#errId25">Carotid endarterectomy</label><label class="checkbox"><input id="checkbox258" name="field250" type="checkbox" value="Cataract surgery" data-parsley-errors-container="#errId25">Cataract surgery</label><label class="checkbox"><input id="checkbox260" name="field250" type="checkbox" value="D &amp; C" data-parsley-errors-container="#errId25">D &amp; C</label><label class="checkbox"><input id="checkbox262" name="field250" type="checkbox" value="Gallbladder removal" data-parsley-errors-container="#errId25">Gallbladder removal</label><label class="checkbox"><input id="checkbox264" name="field250" type="checkbox" value="Gastric bypass" data-parsley-errors-container="#errId25">Gastric bypass</label><label class="checkbox"><input id="checkbox266" name="field250" type="checkbox" value="Hemorrhoidectomy" data-parsley-errors-container="#errId25">Hemorrhoidectomy</label><label class="checkbox"><input id="checkbox268" name="field250" type="checkbox" value="Hernia repair" data-parsley-errors-container="#errId25">Hernia repair</label><label class="checkbox"><input id="checkbox270" name="field250" type="checkbox" value="Hip replacement" data-parsley-errors-container="#errId25">Hip replacement</label><label class="checkbox"><input id="checkbox272" name="field250" type="checkbox" value="Knee replacement" data-parsley-errors-container="#errId25">Knee replacement</label><label class="checkbox"><input id="checkbox274" name="field250" type="checkbox" value="Hysterectomy" data-parsley-errors-container="#errId25">Hysterectomy</label><label class="checkbox"><input id="checkbox300" name="field250" type="checkbox" value="Nephrectomy" data-parsley-errors-container="#errId25">Nephrectomy</label><label class="checkbox"><input id="checkbox302" name="field250" type="checkbox" value="Renal transplant" data-parsley-errors-container="#errId25">Renal transplant</label><label class="checkbox"><input id="checkbox304" name="field250" type="checkbox" value="Thyroidectomy" data-parsley-errors-container="#errId25">Thyroidectomy</label><label class="checkbox"><input id="checkbox306" name="field250" type="checkbox" value="Tonsillectomy" data-parsley-errors-container="#errId25">Tonsillectomy</label><label class="checkbox"><input id="checkbox308" name="field250" type="checkbox" value="Valve replacement" data-parsley-errors-container="#errId25">Valve replacement</label><label class="checkbox"><input id="checkbox310" name="field250" type="checkbox" value="AV fistula" data-parsley-errors-container="#errId25">AV fistula</label><label class="checkbox"><input id="checkbox312" name="field250" type="checkbox" value="AV graft" data-parsley-errors-container="#errId25">AV graft</label><label class="checkbox"><input id="checkbox314" name="field250" type="checkbox" value="PD catheter" data-parsley-errors-container="#errId25">PD catheter</label><span id="errId25" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery1">Other Surgery1</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery1" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId26"><span id="errId26" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery2">Other Surgery2</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery2" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId27"><span id="errId27" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery3">Other Surgery3</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery3" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId28"><span id="errId28" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery4">Other Surgery4</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery4" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId29"><span id="errId29" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery5">Other Surgery5</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery5" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId30"><span id="errId30" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="OtherSurgery6">Other Surgery6</label>
+			    <div class="controls col-sm-9">
+                    
+                <input id="OtherSurgery6" type="text" class="form-control k-textbox" data-role="text" data-parsley-errors-container="#errId31"><span id="errId31" class="error"></span></div>
+                
+		</div></div><div class="col-md-4"><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field383">Surgery Date1</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control k-input" style="width: 100%;"><span class="k-picker-wrap k-state-default"><input id="field383" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field383_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield383" style="width: 100%;" data-parsley-errors-container="#errId32"><span unselectable="on" class="k-select" role="button" aria-controls="field383_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId32" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field385">Surgery Date2</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control k-input" style="width: 100%;"><span class="k-picker-wrap k-state-default"><input id="field385" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field385_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield385" style="width: 100%;" data-parsley-errors-container="#errId33"><span unselectable="on" class="k-select" role="button" aria-controls="field385_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId33" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field407">Surgery Date3</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control" style=""><span class="k-picker-wrap k-state-default"><input id="field407" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field407_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield407" style="width: 100%;" data-parsley-errors-container="#errId34"><span unselectable="on" class="k-select" role="button" aria-controls="field407_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId34" class="error"></span></div>
+                
+		</div><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="field409">Surgery Date4</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control" style=""><span class="k-picker-wrap k-state-default"><input id="field409" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field409_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield409" style="width: 100%;" data-parsley-errors-container="#errId35"><span unselectable="on" class="k-select" role="button" aria-controls="field409_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId35" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field408">Surgery Date5</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control" style=""><span class="k-picker-wrap k-state-default"><input id="field408" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field408_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield408" style="width: 100%;" data-parsley-errors-container="#errId36"><span unselectable="on" class="k-select" role="button" aria-controls="field408_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId36" class="error"></span></div>
+                
+		</div><div class="form-group">
+			    <label class="control-label control-label-left col-sm-3" for="field410">Surgery Date6</label>
+			    <div class="controls col-sm-9">
+                    
+                <span class="k-widget k-datepicker k-header form-control" style=""><span class="k-picker-wrap k-state-default"><input id="field410" type="text" class="form-control k-input" data-role="date" role="textbox" aria-haspopup="true" aria-expanded="false" aria-owns="field410_dateview" aria-disabled="false" aria-readonly="false" aria-label="Current focused date is null" data-error-container="#errfield410" style="width: 100%;" data-parsley-errors-container="#errId37"><span unselectable="on" class="k-select" role="button" aria-controls="field410_dateview"><span unselectable="on" class="k-icon k-i-calendar">select</span></span></span></span><span id="errId37" class="error"></span></div>
+                
+		</div></div></div></div></div></div>
+    </div><div id="panel317" class="panel panel-default" data-role="panel">
+        <div class="panel-heading">Other</div>
+        <div class="panel-body">
+            
+        <div class="row"><div class="col-md-12"><div class="row"><div class="col-md-6"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3">Other</label>
+			    <div class="controls col-sm-9">
+                    
+                <label class="checkbox col-md-6" for="checkbox320"><input type="checkbox" value="Obesity" id="checkbox320" name="field319" data-parsley-errors-container="#errId38">Obesity</label><label class="checkbox col-md-6" for="checkbox321"><input type="checkbox" value="PAD" id="checkbox321" name="field319" data-parsley-errors-container="#errId38">PAD</label><label class="checkbox col-md-6 field-layout-reset" for="checkbox322"><input type="checkbox" value="Vitamin D deficiency" id="checkbox322" name="field319" data-parsley-errors-container="#errId38">Vitamin D deficiency</label><label class="checkbox col-md-6"><input id="checkbox327" name="field319" type="checkbox" value="MGUS" data-parsley-errors-container="#errId38">MGUS</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox329" name="field319" type="checkbox" value="Monoclonal gammopathy" data-parsley-errors-container="#errId38">Monoclonal gammopathy</label><label class="checkbox col-md-6"><input id="checkbox331" name="field319" type="checkbox" value="Hypo Natremia" data-parsley-errors-container="#errId38">Hypo Natremia</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox333" name="field319" type="checkbox" value="Hyper Natremia" data-parsley-errors-container="#errId38">Hyper Natremia</label><label class="checkbox col-md-6"><input id="checkbox335" name="field319" type="checkbox" value="Hypo Calcemia" data-parsley-errors-container="#errId38">Hypo Calcemia</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox337" name="field319" type="checkbox" value="Hyper Calcemia" data-parsley-errors-container="#errId38">Hyper Calcemia</label><label class="checkbox col-md-6"><input id="checkbox339" name="field319" type="checkbox" value="Hypo Kalemia" data-parsley-errors-container="#errId38">Hypo Kalemia</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox341" name="field319" type="checkbox" value="Hyper Kalemia" data-parsley-errors-container="#errId38">Hyper Kalemia</label><label class="checkbox col-md-6"><input id="checkbox343" name="field319" type="checkbox" value="Hypo Magnesemia" data-parsley-errors-container="#errId38">Hypo Magnesemia</label><label class="checkbox col-md-6 field-layout-reset"><input id="checkbox345" name="field319" type="checkbox" value="Hyper Magnesemia" data-parsley-errors-container="#errId38">Hyper Magnesemia</label><label class="checkbox col-md-6"><input id="checkbox347" name="field319" type="checkbox" value="Metabolic acidosis" data-parsley-errors-container="#errId38">Metabolic acidosis</label><span id="errId38" class="error"></span></div>
+                
+		</div></div><div class="col-md-6"><div class="form-group" style="display: block;">
+			    <label class="control-label control-label-left col-sm-3" for="OtherMedicalProblems:">Other Medical Problems:</label>
+			    <div class="controls col-sm-9">
+                    
+                <textarea id="OtherMedicalProblems:" rows="10" class="form-control k-textbox" data-role="textarea" data-maxwords="1" data-parsley-errors-container="#errId39"></textarea><span id="errId39" class="error"></span></div>
+                
+		</div></div></div></div></div></div>
+    </div>
+
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+
+
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/jquery.min.js"></script>
+    <script src="http://protostrap.com/Assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="http://wenzhixin.net.cn/p/bootstrap-table/src/bootstrap-table.js" type="text/javascript"></script>
+
+    <script src="http://protostrap.com/Assets/inputmask/js/jquery.inputmask.js" type="text/javascript"></script>
+    <script src="http://cdn.kendostatic.com/2014.1.318/js/kendo.all.min.js"></script>
+    <script src="http://protostrap.com/Assets/parsely/parsley.extend.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/parsely/2.0/parsley.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/download.js" type="text/javascript"></script>
+    <script src="http://protostrap.com/Assets/protostrap.js" type="text/javascript"></script>
+</body>
+</html>
